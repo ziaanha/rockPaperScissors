@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors 🎀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-container">
+        <div class="top-label">✦ THE MINI GAME ✦</div>
+
+        <h1>Rock Paper<br><span>Scissors!</span></h1>
+        <p class="subtitle">A little game of luck and fun ♡</p>
+
+        <div class="scoreboard">
+            <div class="score-card">
+                <span class="score-emoji">🎀</span>
+                <p>You</p>
+                <h2 id="player-score">0</h2>
+            </div>
+
+            <div class="score-divider">VS</div>
+
+            <div class="score-card">
+                <span class="score-emoji">🤖</span>
+                <p>Computer</p>
+                <h2 id="computer-score">0</h2>
+            </div>
+        </div>
+
+        <div class="arena">
+            <div class="player-side">
+                <p class="side-label">YOU</p>
+                <div class="hand" id="player-hand">❔</div>
+            </div>
+
+            <div class="versus">VS</div>
+
+            <div class="player-side">
+                <p class="side-label">COMPUTER</p>
+                <div class="hand" id="computer-hand">❔</div>
+            </div>
+        </div>
+
+        <div class="result-box" aria-live="polite">
+            <h2 id="result">Ready to play? ✨</h2>
+            <p id="message">Choose your move below!</p>
+        </div>
+
+        <p class="choose-title">MAKE YOUR MOVE</p>
+
+        <div class="choices">
+            <button class="choice" data-choice="rock" aria-label="Choose rock">
+                <span>✊</span>
+                <small>Rock</small>
+            </button>
+
+            <button class="choice" data-choice="paper" aria-label="Choose paper">
+                <span>✋</span>
+                <small>Paper</small>
+            </button>
+
+            <button class="choice" data-choice="scissors" aria-label="Choose scissors">
+                <span>✌️</span>
+                <small>Scissors</small>
+            </button>
+        </div>
+
+        <button id="reset-btn" class="reset-btn">↻ Start a new game</button>
+
+        <footer>Made with ♡ and a little bit of luck</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
